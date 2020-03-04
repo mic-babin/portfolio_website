@@ -362,6 +362,11 @@ img {
   #contact-a .text-fields .text-input::placeholder,
   #contact-a .text-fields .message-input::placeholder {
     font-family: "Dosis", sans-serif; }
+#contact-a .wrap-recaptcha {
+  text-align: center; }
+#contact-a .g-recaptcha {
+  display: inline-block;
+  max-width: 305px; }
 #contact-a button[type="submit"] {
   width: 50%; }
 #contact-b .contact-info {

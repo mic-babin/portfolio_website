@@ -286,6 +286,7 @@ img {
         "name email"
         "subject phone"
         "message message";
+
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -319,10 +320,18 @@ img {
       }
     }
 
+    .wrap-recaptcha {
+      text-align: center;
+    }
+    .g-recaptcha {
+      display: inline-block;
+      max-width: 305px;
+    }
     button[type="submit"] {
       width: 50%;
     }
   }
+
   &-b {
     .contact-info {
       display: grid;
