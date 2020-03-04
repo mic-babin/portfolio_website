@@ -82,7 +82,7 @@ img {
     // Header-content
     .header-content {
       text-align: center;
-      padding-top: 20%;
+      padding-top: 20vh;
 
       h1 {
         font-size: 4rem;
@@ -216,9 +216,7 @@ img {
   &-a {
     .about-info {
       display: grid;
-      grid-template-areas:
-        "bioimage bio bio bio "
-        "aw1 aw2 aw2 aw3";
+      grid-template-areas: "bioimage bio bio bio ";
       grid-gap: 1.2rem;
     }
 
@@ -234,43 +232,6 @@ img {
       display: flex;
       align-items: center;
     }
-
-    .award-1 {
-      grid-area: aw1;
-    }
-    .award-2 {
-      grid-area: aw2;
-      font-size: 1.1rem;
-    }
-    .award-3 {
-      grid-area: aw3;
-    }
-
-    .award-1 .fas,
-    .award-2 .fas,
-    .award-3 .fas {
-      color: $main-color;
-      margin: 1rem;
-    }
-  }
-
-  // About B: Skills
-  &-b {
-    .progress {
-      overflow: hidden;
-      height: 20px;
-      background: $medium-color;
-      border-radius: 5px;
-      margin-bottom: 0.6rem;
-      margin-top: 0.3rem;
-
-      div {
-        height: 100%;
-        color: #fff;
-        text-align: center;
-        background: $main-color;
-      }
-    }
   }
 
   // About C: Logos
@@ -279,6 +240,7 @@ img {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 2rem;
+      margin-top: 2rem;
     }
 
     img {
@@ -343,12 +305,20 @@ img {
       .message-input {
         grid-area: message;
         height: 100px;
+        resize: none;
       }
 
-      .text-input {
+      .text-input,
+      .message-input {
         padding: 0.5rem 1rem;
       }
+
+      .text-input::placeholder,
+      .message-input::placeholder {
+        font-family: "Dosis", sans-serif;
+      }
     }
+
     button[type="submit"] {
       width: 50%;
     }
