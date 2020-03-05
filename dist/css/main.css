@@ -228,14 +228,14 @@ img {
   margin-top: 1rem; }
 
 #main-nav ul li:hover ul li {
-  background: #e7e7e7a8;
+  background: #f4f4f4d8;
   width: 100%; }
 
 #main-nav ul li:hover ul li a {
   color: #333; }
 
 #main-nav ul li:hover ul li:hover {
-  background: #e0e0e0e0;
+  background: rgba(204, 204, 204, 0.856);
   color: inherit; }
 
 #header-home {
@@ -434,6 +434,9 @@ img {
     height: 30rem; }
     #header-home .header-content {
       padding-top: 5rem; }
+
+  #main-nav ul li:hover ul {
+    display: none; }
 
   #about-a .bio {
     padding: 1rem; }

@@ -20,6 +20,9 @@
       padding-top: 5rem;
     }
   }
+  #main-nav ul li:hover ul {
+    display: none;
+  }
 
   #about-a .bio {
     padding: 1rem;
