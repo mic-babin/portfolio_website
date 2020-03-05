@@ -4,11 +4,7 @@
   max-width: $website-width;
   padding: 0 1.5rem;
   margin: auto;
-  overflow: hidden;
-}
-
-.g-recaptcha {
-  display: inline-block;
+  overflow: visible;
 }
 
 // Button
@@ -120,14 +116,4 @@ input[class^="btn-"]:hover {
   margin: 0 auto 1rem auto;
   font-weight: 100;
   transform: uppercase;
-}
-
-.captcha {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  div {
-    text-align: center;
-  }
 }

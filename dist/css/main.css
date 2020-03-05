@@ -2,10 +2,7 @@
   max-width: 960px;
   padding: 0 1.5rem;
   margin: auto;
-  overflow: hidden; }
-
-.g-recaptcha {
-  display: inline-block; }
+  overflow: visible; }
 
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
@@ -81,13 +78,6 @@ input[class^="btn-"]:hover {
   margin: 0 auto 1rem auto;
   font-weight: 100;
   transform: uppercase; }
-
-.captcha {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-  .captcha div {
-    text-align: center; }
 
 .items {
   display: grid;
@@ -201,7 +191,8 @@ img {
   #main-nav ul {
     display: flex; }
   #main-nav li {
-    padding: 1rem 1.5rem; }
+    padding: 1rem 1.5rem;
+    position: relative; }
   #main-nav a {
     text-decoration: none;
     color: white;
@@ -213,6 +204,39 @@ img {
       border-color: #ccc; }
     #main-nav a.current {
       border-color: #ffbc00; }
+
+/* Hide Nested ul by default */
+#main-nav ul li ul {
+  display: none;
+  position: absolute;
+  height: 350px;
+  overflow: hidden;
+  overflow-y: scroll;
+  z-index: 3; }
+
+#main-nav ul li:hover {
+  cursor: pointer; }
+
+#main-nav ul li:hover a {
+  color: white; }
+
+/* Nested dropdown Show */
+#main-nav ul li:hover ul {
+  display: block;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem; }
+
+#main-nav ul li:hover ul li {
+  background: #e7e7e7a8;
+  width: 100%; }
+
+#main-nav ul li:hover ul li a {
+  color: #333; }
+
+#main-nav ul li:hover ul li:hover {
+  background: #e0e0e0e0;
+  color: inherit; }
 
 #header-home {
   background: url("../img/nature/helicopter.jpg") no-repeat 20% 30%/cover;

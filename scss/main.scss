@@ -52,6 +52,7 @@ img {
   }
   li {
     padding: 1rem 1.5rem;
+    position: relative;
   }
 
   a {
@@ -69,6 +70,47 @@ img {
       border-color: $main-color;
     }
   }
+}
+/* Hide Nested ul by default */
+
+#main-nav ul li ul {
+  display: none;
+  position: absolute;
+  height: 350px;
+  overflow: hidden;
+  overflow-y: scroll;
+  z-index: 3;
+}
+
+#main-nav ul li:hover {
+  cursor: pointer;
+}
+
+#main-nav ul li:hover a {
+  color: white;
+}
+
+/* Nested dropdown Show */
+
+#main-nav ul li:hover ul {
+  display: block;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem;
+}
+
+#main-nav ul li:hover ul li {
+  background: #e7e7e7a8;
+  width: 100%;
+}
+
+#main-nav ul li:hover ul li a {
+  color: #333;
+}
+
+#main-nav ul li:hover ul li:hover {
+  background: #e0e0e0e0;
+  color: inherit;
 }
 
 // Header
