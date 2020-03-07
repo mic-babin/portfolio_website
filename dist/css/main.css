@@ -55,6 +55,13 @@ input[class^="btn-"]:hover {
 .py-4 {
   padding: 4rem 0; }
 
+.pt-3 {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem; }
+
+.pb-2 {
+  padding-bottom: 2rem; }
+
 .my-1 {
   margin: 1rem 0; }
 .my-2 {
@@ -154,6 +161,83 @@ input[class^="btn-"]:hover {
     opacity: 0.7;
     margin: 0; }
 
+.item-text a:link {
+  color: #fff; }
+.item-text a:visited {
+  color: #fff; }
+.item-text a:hover {
+  color: #fff; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#main {
+  background: #fff;
+  width: 100%;
+  height: 100%; }
+
+#content {
+  width: 845px;
+  height: 620px;
+  margin: 0px auto;
+  border-radius: 3px; }
+
+#gallery_img {
+  width: 845px;
+  height: 500px;
+  float: left;
+  position: relative; }
+
+#lefty {
+  width: 23px;
+  position: absolute;
+  top: 235px;
+  left: 10px; }
+
+#righty {
+  width: 23px;
+  position: absolute;
+  top: 235px;
+  right: 10px; }
+
+#play,
+#pause {
+  display: none;
+  width: 12px;
+  position: absolute;
+  top: 239px;
+  right: 40px; }
+
+#expand {
+  width: 18px;
+  position: absolute;
+  top: 478px;
+  right: 6px; }
+
+#thumbs {
+  height: 100px;
+  width: 845px;
+  float: left;
+  overflow: auto;
+  margin-top: 15px;
+  white-space: nowrap; }
+
+.thumbs_style {
+  display: inline-block; }
+
+.thumbs_style img {
+  width: 105px;
+  height: 80px;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.4); }
+
+.gallery_img_style {
+  width: 845px;
+  height: 500px;
+  border-radius: 3px;
+  position: absolute; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -165,7 +249,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #fff; }
 
 ul {
   list-style: none; }
@@ -195,7 +279,7 @@ img {
     position: relative; }
   #main-nav a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
@@ -210,7 +294,7 @@ img {
   display: none;
   position: absolute;
   height: 350px;
-  overflow: hidden;
+  overflow-x: hidden;
   overflow-y: scroll;
   z-index: 3; }
 
