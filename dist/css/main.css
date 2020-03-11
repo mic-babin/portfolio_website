@@ -535,9 +535,9 @@ img {
   #about-a .bio {
     padding: 1rem; }
     #about-a .bio h1 {
-      font-size: 1.2rem; }
+      font-size: 1rem; }
     #about-a .bio p {
-      font-size: 0.8rem; }
+      font-size: 1.2rem; }
 
   #about-d .testimonials {
     grid-template-columns: repeat(2, 1fr); } }
@@ -582,11 +582,14 @@ img {
   #about-a .about-info {
     grid-template-areas: "bioimage" "bio"; }
   #about-a .bio {
-    padding: 2rem; }
+    padding: 1rem; }
     #about-a .bio h4 {
-      font-size: 1.5rem; }
+      font-size: 1.2rem; }
     #about-a .bio p {
-      font-size: 1.5rem; }
+      font-size: 1.2rem;
+      padding-bottom: 0.5rem; }
+    #about-a .bio .py-2 {
+      padding: 0.5rem 0; }
   #about-c {
     display: none; }
   #about-d .testimonials div {
@@ -647,11 +650,11 @@ img {
     font-size: 2rem; } }
 @media (max-width: 667px) {
   #about-a .bio {
-    padding: 0.5rem; }
+    padding: 1rem; }
     #about-a .bio h1 {
       font-size: 1rem; }
     #about-a .bio p {
-      font-size: 0.8rem; }
+      font-size: 1.2rem; }
     #about-a .bio .py-1 {
       padding: 0.5rem 0; } }
 
