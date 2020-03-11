@@ -48,6 +48,11 @@ img {
   justify-content: space-between;
   padding-top: 1rem;
 
+  img {
+    -webkit-filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow (1px 1px 10px rgba(0, 0, 0, 0.4));
+  }
+
   ul {
     display: flex;
   }
@@ -63,6 +68,7 @@ img {
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 
     &:hover {
       border-color: $medium-color;
@@ -81,6 +87,10 @@ img {
   overflow-x: hidden;
   overflow-y: scroll;
   z-index: 3;
+
+  a {
+    text-shadow: none;
+  }
 }
 
 #main-nav ul li:hover {
@@ -274,6 +284,14 @@ img {
       padding: 0.8rem 4rem;
       display: flex;
       align-items: center;
+
+      h4 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
 

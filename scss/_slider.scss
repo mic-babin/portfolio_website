@@ -10,29 +10,29 @@ body {
   // padding-top: 50px;
 }
 #content {
-  width: 845px;
-  height: 620px;
+  width: 120vh;
+  height: 88vh;
   margin: 0px auto;
   border-radius: 3px;
 }
 
 #gallery_img {
-  width: 845px;
-  height: 500px;
+  width: 120vh;
+  height: 71vh;
   float: left;
   position: relative;
 }
 #lefty {
   width: 23px;
   position: absolute;
-  top: 235px;
+  top: 50%;
   left: 10px;
 }
 
 #righty {
   width: 23px;
   position: absolute;
-  top: 235px;
+  top: 50%;
   right: 10px;
 }
 
@@ -52,13 +52,13 @@ body {
 #expand {
   width: 18px;
   position: absolute;
-  top: 478px;
+  bottom: 6px;
   right: 6px;
 }
 
 #thumbs {
-  height: 100px;
-  width: 845px;
+  height: 14.2vh;
+  width: 120vh;
   float: left;
   overflow: auto;
   margin-top: 15px;
@@ -70,15 +70,15 @@ body {
 }
 
 .thumbs_style img {
-  width: 105px;
-  height: 80px;
+  width: 13vh;
+  height: 11vh;
   border-radius: 3px;
   border: 2px solid rgba(0, 0, 0, 0.4);
 }
 
 .gallery_img_style {
-  width: 845px;
-  height: 500px;
+  width: 120vh;
+  height: 71vh;
   border-radius: 3px;
   position: absolute;
 }

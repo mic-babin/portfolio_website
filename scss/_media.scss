@@ -40,8 +40,6 @@
   }
 }
 
-// Smartphone Landscape
-
 // Smartphones
 @media (max-width: 500px) {
   .py-3,
@@ -117,10 +115,10 @@
       .bio {
         padding: 2rem;
         h4 {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
         }
         p {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -174,6 +172,38 @@
         font-size: 2rem;
       }
     }
+  }
+
+  // Slider
+  #content {
+    width: 100vw;
+    height: 73.37vw;
+  }
+
+  #gallery_img {
+    width: 100vw;
+    height: 59.17vw;
+  }
+  #thumbs {
+    height: 11.83vw;
+    width: 100vw;
+  }
+
+  .thumbs_style img {
+    width: 11vw;
+    height: 9vw;
+  }
+
+  .gallery_img_style {
+    width: 100vw;
+    height: 59.17vw;
+  }
+  #expand {
+    display: none;
+  }
+
+  .pt-3 {
+    padding: 1.5rem 0;
   }
 
   // Footer

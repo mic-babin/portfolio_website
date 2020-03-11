@@ -11,8 +11,6 @@ $(document).ready(function() {
     horizrailenabled: false
   });
 
-  $(".sub-menu").css({ overflowX: "hidden !important" });
-
   $(".thumbs_style img")
     .first()
     .css("border", "2px solid #ffbc00");
@@ -140,16 +138,16 @@ $(document).ready(function() {
   });
 
   $("#enlarge div").css({
-    width: "1000px",
-    height: "700px",
+    width: "128.57vh",
+    height: "90vh",
     margin: "0px auto",
-    "margin-top": "35px",
+    "margin-top": "5vh",
     position: "relative"
   });
 
   $("#large_img").css({
-    width: "1000px",
-    height: "700px"
+    width: "128.57vh",
+    height: "90vh"
   });
 
   $("#large_close").css({
@@ -162,14 +160,14 @@ $(document).ready(function() {
   $("#large_left").css({
     width: "23px",
     position: "absolute",
-    top: "314px",
+    top: "50%",
     left: "10px"
   });
 
   $("#large_right").css({
     width: "23px",
     position: "absolute",
-    top: "314px",
+    top: "50%",
     right: "10px"
   });
 
