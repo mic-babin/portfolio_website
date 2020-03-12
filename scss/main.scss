@@ -1,6 +1,6 @@
 @import "config";
 @import "utilities";
-@import "item_grid";
+@import "itemgrid";
 @import "slider";
 
 //General Styles
@@ -56,6 +56,7 @@ img {
   ul {
     display: flex;
   }
+
   li {
     padding: 1rem 1.5rem;
     position: relative;
@@ -73,11 +74,13 @@ img {
     &:hover {
       border-color: $medium-color;
     }
+
     &.current {
       border-color: $main-color;
     }
   }
 }
+
 /* Hide Nested ul by default */
 
 #main-nav ul li ul {
@@ -202,6 +205,7 @@ img {
         &:nth-child(odd) {
           background: $light-color;
         }
+
         &:nth-child(even) {
           background: $medium-color;
         }
@@ -308,6 +312,7 @@ img {
       width: 70%;
     }
   }
+
   // About D
   &-d {
     .testimonials {
@@ -355,15 +360,19 @@ img {
       .name-input {
         grid-area: name;
       }
+
       .subject-input {
         grid-area: subject;
       }
+
       .email-input {
         grid-area: email;
       }
+
       .phone-input {
         grid-area: phone;
       }
+
       .message-input {
         grid-area: message;
         height: 100px;
@@ -384,10 +393,12 @@ img {
     .wrap-recaptcha {
       text-align: center;
     }
+
     .g-recaptcha {
       display: inline-block;
       max-width: 305px;
     }
+
     button[type="submit"] {
       width: 50%;
     }
