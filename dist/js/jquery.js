@@ -6,11 +6,6 @@ $(document).ready(function() {
   var temp = 0;
   var status = "on";
 
-  $("#thumbs").niceScroll();
-  $(".sub-menu").niceScroll({
-    horizrailenabled: false
-  });
-
   $(".thumbs_style img")
     .first()
     .css("border", "2px solid #ffbc00");
@@ -138,16 +133,16 @@ $(document).ready(function() {
   });
 
   $("#enlarge div").css({
-    width: "128.57vh",
-    height: "90vh",
+    width: "130vh",
+    height: "87vh",
     margin: "0px auto",
     "margin-top": "5vh",
     position: "relative"
   });
 
   $("#large_img").css({
-    width: "128.57vh",
-    height: "90vh"
+    width: "130vh",
+    height: "87vh"
   });
 
   $("#large_close").css({

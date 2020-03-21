@@ -63,6 +63,8 @@ input[class^="btn-"]:hover {
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+  max-width: 600px;
+  margin: auto;
 }
 
 .text-center {
@@ -86,6 +88,9 @@ input[class^="btn-"]:hover {
 }
 
 .pt {
+  &-2 {
+    padding-top: 3rem;
+  }
   &-3 {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
@@ -93,8 +98,16 @@ input[class^="btn-"]:hover {
 }
 
 .pb {
+  &-1 {
+    padding-bottom: 8px;
+  }
+
   &-2 {
     padding-bottom: 2rem;
+  }
+
+  &-3 {
+    padding-bottom: 3rem;
   }
 }
 

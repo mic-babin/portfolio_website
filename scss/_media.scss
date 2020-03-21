@@ -21,6 +21,27 @@
 }
 
 // Tablets & Smaller
+@media screen and (max-width: 812px) and (min-width: 500px) {
+  .min-height-center {
+    padding-top: 4vh;
+  }
+
+  .mt-6 {
+    margin-top: 5vh;
+  }
+  .medium-height-center {
+    padding-top: 6vh;
+  }
+  .pb-6 {
+    padding-bottom: 6vh;
+  }
+  .height-center {
+    padding-top: 11vh;
+  }
+  .min-height {
+    min-height: 84.5vh;
+  }
+}
 @media (max-width: 812px) {
   #header-home {
     height: 30rem;
@@ -73,31 +94,29 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  #thumbs {
-    display: none;
-  }
   #content {
     width: 100vw;
-    height: 73.37vw;
+    height: 81vw;
   }
 
   #gallery_img {
     width: 100vw;
-    height: 59.17vw;
+    height: 67vw;
   }
   #thumbs {
-    height: 11.83vw;
+    display: none;
+    height: 10vw;
     width: 100vw;
   }
 
   .thumbs_style img {
-    width: 11vw;
-    height: 9vw;
+    width: 10vw;
+    height: 7vw;
   }
 
   .gallery_img_style {
     width: 100vw;
-    height: 59.17vw;
+    height: 67vw;
   }
   #expand {
     display: none;
@@ -252,26 +271,26 @@
   // Slider
   #content {
     width: 100vw;
-    height: 73.37vw;
+    height: 81vw;
   }
 
   #gallery_img {
     width: 100vw;
-    height: 59.17vw;
+    height: 67vw;
   }
   #thumbs {
-    height: 11.83vw;
+    height: 10vw;
     width: 100vw;
   }
 
   .thumbs_style img {
-    width: 11vw;
-    height: 9vw;
+    width: 10vw;
+    height: 7vw;
   }
 
   .gallery_img_style {
     width: 100vw;
-    height: 59.17vw;
+    height: 67vw;
   }
   #expand {
     display: none;
@@ -302,11 +321,14 @@
   }
 }
 
-@media (max-height: 330px) {
+@media (max-height: 375px) {
   #header-home {
     .header-content {
       h1 {
         font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
       }
     }
   }
@@ -348,12 +370,12 @@
 
   #content {
     width: 120vh;
-    height: 88vh;
+    height: 97vh;
   }
 
   #gallery_img {
     width: 120vh;
-    height: 71vh;
+    height: 80vh;
   }
   #thumbs {
     height: 14.2vh;
@@ -361,13 +383,13 @@
   }
 
   .thumbs_style img {
-    width: 13vh;
-    height: 11vh;
+    width: 12vh;
+    height: 8vh;
   }
 
   .gallery_img_style {
     width: 120vh;
-    height: 71vh;
+    height: 80vh;
   }
   #expand {
     display: block;
