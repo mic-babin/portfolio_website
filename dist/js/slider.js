@@ -79,5 +79,3 @@ document.querySelector('#close-btn').addEventListener('click', function () {
   document.querySelector("#expand-window").style.display = "none";
   document.querySelector('.slider').classList.add("pb-3");
 });
-
-// Smooth transition and scrollbar movement
