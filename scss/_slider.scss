@@ -1,3 +1,27 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    ;
+  }
+
+  to {
+    opacity: 1;
+    ;
+  }
+}
+
+// @keyframes fadeOut {
+//   from {
+//     opacity: 0;
+//     ;
+//   }
+
+//   to {
+//     opacity: 1;
+//     ;
+//   }
+// }
+
 /* Position the image container (needed to position the left and right arrows) */
 .slider {
   position: relative;
@@ -37,6 +61,16 @@
   margin: 0px auto;
 
 }
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+
+// .fadeOut {
+//   animation-name: fadeOut;
+//   animation-duration: 0.5s;
+// }
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
