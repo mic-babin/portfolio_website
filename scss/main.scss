@@ -5,6 +5,7 @@
 @import "home";
 @import "about";
 @import "contact";
+
 //General Styles
 * {
   margin: 0;
@@ -151,6 +152,7 @@ img {
 
 // Header
 #header {
+
   // Header home
   &-home {
     background: $bg-image no-repeat 20% 20% / cover;
@@ -171,6 +173,7 @@ img {
         text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
         font-size: 1.5rem !important;
       }
+
       h1 {
         text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
       }

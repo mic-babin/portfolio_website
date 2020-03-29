@@ -1,96 +1,163 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/308eb90e36.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <title>Alex Rouette | Nature</title>
-    <script type="text/javascript" src="js/library.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="Scroll/jquery.nicescroll.js"></script>
-  </head>
-  <body>
-    <div id="main"></div>
-    <header id="header-inner">
-      <div class="container">
-        <nav id="main-nav">
-          <img src="img/logo.png" alt="My Portfolio" id="logo" />
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html" class="current">Portfolio</a>
-              <ul>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Urban</a></li>
-                <li ><a href="nature.html">Nature</a></li>
-                <li><a href="#">Newborns</li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Animals</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-    </header>
 
-  <!-- Title -->
-    <section id="work-a" class="text-center pt-3 medium-height-center ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/308eb90e36.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <title>Alex Rouette | Nature</title>
+
+
+</head>
+
+<body>
+  <div></div>
+  <header id="header-inner" class="hide">
+    <div class="container">
+      <nav id="main-nav">
+        <img src="img/logo.png" alt="My Portfolio" id="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" class="current">Portfolio</a>
+            <ul>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Urban</a></li>
+              <li><a href="nature.html">Nature</a></li>
+              <li><a href="#">Newborns</li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Animals</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <div class="full-height">
+    <section id="work-a" class="text-center pt-1  hide">
       <div class="container">
         <h2 class="section-title">Nature</h2>
         <div class="bottom-line"></div>
       </div>
     </section>
+    <!-- Expanded container -->
+    <div id="expand-window" class="show"></div>
 
-    <!-- Slider -->
-    
-      <section id="content" class="pb-2">"
-        <div id="gallery_img">
-          <div id="image"></div>
 
-          <img src="img/slider/icons/left.png" id="lefty" />
-          <img src="img/slider/icons/right.png" id="righty" />
-          <img src="img/slider/icons/play.png" id="play" />
-          <img src="img/slider/icons/pause.png" id="pause" />
-          <img src="img/slider/icons/expand.png" id="expand" />
+    <!-- Container for the image gallery -->
+    <section class="slider pb-3">
+
+      <!-- Frame for the image -->
+      <div>
+        <a class="prev prev-exp  show" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next next-exp  show" onclick="plusSlides(1)">&#10095;</a>
+        <div>
+          <img src="expand.png" id="expand-btn" class="hide"></div>
+        <div>
+          <img src="close.png" id="close-btn" class="show expandables"></div>
+
+
+
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides expandables">
+          <img class='lrg-img' src="img/nature/nature1.jpg">
+          <a class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next hide" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
-        <div id="thumbs">
-          <div class="thumbs_style"><img src="img/nature/nature1.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature2.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature3.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature4.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature5.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature6.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature7.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature8.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature9.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature10.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature11.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature12.jpg" /></div>
-          <div class="thumbs_style"><img src="img/nature/nature13.jpg" /></div>
+        <div class="mySlides expandables">
+          <img class='lrg-img' src="img/nature/nature2.jpg">
+          <a class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next hide" onclick="plusSlides(1)">&#10095;</a>
         </div>
-      </section>
-    
-    <footer id="main-footer" class="mt-6">
-      <div class="footer-content container">
-        <p>Copyright &copy; 2020. All Rights Reserved</p>
-        <div class="social">
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-youtube"></i>
+        <div class="mySlides expandables">
+          <img class='lrg-img' src="img/nature/nature3.jpg">
+          <a class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next hide" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="mySlides expandables">
+          <img class='lrg-img' src="img/nature/nature4.jpg">
+          <a class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next hide" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="mySlides expandables">
+          <img class='lrg-img' src="img/nature/nature5.jpg">
+          <a class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next hide" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="mySlides expandables">
+          <img class='lrg-img' src="img/nature/nature6.jpg">
+          <a class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next hide" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="mySlides expandables">
+          <img class='lrg-img' src="img/nature/nature7.jpg">
+          <a class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next hide" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="mySlides expandables">
+          <img class='lrg-img' src="img/nature/nature8.jpg">
+          <a class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next hide" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="mySlides expandables">
+          <img class='lrg-img' src="img/nature/nature9.jpg">
+          <a class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next hide" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
-    </footer>
+      <!-- Next and previous buttons -->
+
+
+      <!-- Thumbnail images -->
+      <div class="thumbs hide">
+        <div class="thumbs_style">
+          <img class="demo cursor" src="img/nature/nature1.jpg" onclick="currentSlide(1)" alt="The Woods">
+        </div>
+        <div class="thumbs_style">
+          <img class="demo cursor" src="img/nature/nature2.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+        </div>
+        <div class="thumbs_style">
+          <img class="demo cursor" src="img/nature/nature3.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="thumbs_style">
+          <img class="demo cursor" src="img/nature/nature4.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="thumbs_style">
+          <img class="demo cursor" src="img/nature/nature5.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>
+        <div class="thumbs_style">
+          <img class="demo cursor" src="img/nature/nature6.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+        <div class="thumbs_style">
+          <img class="demo cursor" src="img/nature/nature7.jpg" onclick="currentSlide(7)" alt="Snowy Mountains">
+        </div>
+        <div class="thumbs_style">
+          <img class="demo cursor" src="img/nature/nature8.jpg" onclick="currentSlide(8)" alt="Snowy Mountains">
+        </div>
+        <div class="thumbs_style">
+          <img class="demo cursor" src="img/nature/nature9.jpg" onclick="currentSlide(9)" alt="Snowy Mountains">
+        </div>
+      </div>
+    </section>
   </div>
-  <script src="js/r_click.js"></script>
-  </body>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="mt-6 hide">
+    <div class="footer-content container">
+      <p>Copyright &copy; 2020. All Rights Reserved</p>
+      <div class="social">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="js/slider.js"></script>
+</body>
+
 </html>

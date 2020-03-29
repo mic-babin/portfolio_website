@@ -6,9 +6,11 @@
       padding-top: 30vh;
     }
   }
+
   .container {
     max-width: 1280px;
   }
+
   .bio {
     h4 {
       font-size: 1.3rem !important;
@@ -29,19 +31,24 @@
   .mt-6 {
     margin-top: 7vh;
   }
+
   .medium-height-center {
     padding-top: 6vh;
   }
+
   .pb-6 {
     padding-bottom: 6vh;
   }
+
   .height-center {
     padding-top: 11vh;
   }
+
   .min-height {
     min-height: 84.5vh;
   }
 }
+
 @media (max-width: 812px) {
   #header-home {
     height: 30rem;
@@ -50,6 +57,7 @@
       padding-top: 5rem;
     }
   }
+
   #main-nav ul li:hover ul {
     display: none;
   }
@@ -61,6 +69,7 @@
       padding-bottom: 1rem;
     }
   }
+
   #home-c .process {
     grid-template-columns: repeat(2, 1fr);
 
@@ -84,6 +93,7 @@
       h1 {
         font-size: 1rem;
       }
+
       p {
         font-size: 1rem;
       }
@@ -94,37 +104,40 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  #content {
-    width: 100vw;
-    height: 81vw;
-  }
-
-  #gallery_img {
+  .slider {
     width: 100vw;
     height: 67vw;
   }
-  #thumbs {
-    display: none;
-    height: 10vw;
+
+  .lrg-img {
     width: 100vw;
+    height: 67vw;
   }
 
-  .thumbs_style img {
+  .thumbs {
+    display: none;
+  }
+
+  .demo {
     width: 10vw;
     height: 7vw;
   }
 
-  .gallery_img_style {
+  .mySlides {
     width: 100vw;
     height: 67vw;
   }
-  #expand {
+
+  #expand-btn {
     display: none;
   }
+
+
 }
 
 // Smartphones
 @media (max-width: 500px) {
+
   .py-3,
   .py-4 {
     padding: 2rem 0;
@@ -186,6 +199,7 @@
       .py-2 {
         padding: 0;
       }
+
       .stats div {
         padding: 2rem 0 1rem 0;
       }
@@ -200,12 +214,14 @@
           "bioimage"
           "bio";
       }
+
       .bio {
         padding: 1rem;
 
         h4 {
           font-size: 1.2rem;
         }
+
         p {
           font-size: 1.2rem;
           padding-bottom: 0.5rem;
@@ -269,30 +285,28 @@
   }
 
   // Slider
-  #content {
-    width: 100vw;
-    height: 81vw;
-  }
-
-  #gallery_img {
+  .slider {
     width: 100vw;
     height: 67vw;
   }
-  #thumbs {
-    height: 10vw;
+
+  .lrg-img {
     width: 100vw;
+    height: 67vw;
   }
 
-  .thumbs_style img {
+
+  .demo {
     width: 10vw;
     height: 7vw;
   }
 
-  .gallery_img_style {
+  .mySlides {
     width: 100vw;
     height: 67vw;
   }
-  #expand {
+
+  #expand-btn {
     display: none;
   }
 
@@ -321,24 +335,38 @@
   }
 }
 
-@media (max-height: 375px) {
+@media (max-height: 414px) {
   #header-home {
     .header-content {
       h1 {
         font-size: 2rem;
       }
+
       p {
         font-size: 1.2rem;
       }
     }
+  }
+
+  .slider-exp {
+    width: 138vh !important;
+    height: 92vh !important;
+  }
+
+  .exp-size {
+
+    width: 138vh !important;
+    height: 92vh !important;
+
   }
 }
 
 @media (max-width: 667px) {
   #about-a {
     .about-info {
-      grid-template-areas: "bioimage" "bio";
+      grid-template-areas: "bioimage""bio";
     }
+
     .bio {
       padding: 1rem;
 
@@ -356,11 +384,13 @@
     }
   }
 }
+
 @media (max-height: 550px) {
   #about-a {
     .about-info {
       grid-template-areas: "bioimage bio";
     }
+
     .bio {
       p {
         font-size: 1rem;
@@ -368,30 +398,32 @@
     }
   }
 
-  #content {
-    width: 120vh;
-    height: 97vh;
-  }
-
-  #gallery_img {
+  .slider {
     width: 120vh;
     height: 80vh;
   }
-  #thumbs {
+
+  .lrg-img {
+    width: 120vh;
+    height: 80vh;
+  }
+
+  .thumbs {
     height: 14.2vh;
     width: 120vh;
   }
 
-  .thumbs_style img {
+  .demo {
     width: 12vh;
     height: 8vh;
   }
 
-  .gallery_img_style {
+  .mySlides {
     width: 120vh;
     height: 80vh;
   }
-  #expand {
+
+  #expand-btn {
     display: block;
   }
 }
@@ -400,4 +432,57 @@
   #about-a .bio p {
     font-size: 0.8rem;
   }
+}
+
+@media screen and (min-height: 736px) and (max-height: 825px) {
+  .full-height {
+    min-height: 61vh !important;
+    padding-top: 6vh;
+  }
+}
+
+@media screen and (width: 768px) and (height: 1024px) {
+  .full-height {
+    min-height: 70vh !important;
+    padding-top: 8vh;
+  }
+}
+
+@media screen and (width: 1024px) and (height: 1366px) {
+  .full-height {
+    min-height: 82vh !important;
+    padding-top: 7vh;
+  }
+
+  .slider {
+    width: 100vw;
+    height: 79vw;
+  }
+
+  .lrg-img {
+    width: 100vw;
+    height: 67vw;
+  }
+
+  .thumbs {
+    margin-top: 1vh;
+    width: 100vw;
+    height: 10vw;
+  }
+
+  .demo {
+    width: 10vw;
+    height: 7vw;
+  }
+
+  .mySlides {
+    width: 100vw;
+    height: 67vw;
+  }
+
+  #expand-btn {
+    display: none;
+  }
+
+
 }
